@@ -2,7 +2,7 @@
   <section class="experience">
     <h2>Work Experience</h2>
     <div class="experience-container">
-      <div v-for="item in experiences" :key="item - role" class="experience-card">
+      <div v-for="item in experiences" :key="item" class="experience-card">
         <img :src="item.imageSrc" alt="Company Logo" class="company-logo"/>
         <div class="experience-details">
           <h3>
@@ -79,6 +79,7 @@ const experiences = [
   padding: 2rem;
   background: #f0f0f0;
   color: #333;
+  height: auto;
 }
 
 .experience h2 {

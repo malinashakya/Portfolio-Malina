@@ -56,6 +56,7 @@
   background: #405690;
   color: white;
   text-align: center;
+  height: auto;
 }
 
 .contact h2 {

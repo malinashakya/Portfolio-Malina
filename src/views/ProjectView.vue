@@ -89,6 +89,7 @@ const projects = ref([
   padding: 2rem;
   background: lightskyblue;
   color:white;
+
 }
 .projects h2{
   font-size:2.5rem;
