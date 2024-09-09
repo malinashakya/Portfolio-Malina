@@ -77,7 +77,7 @@ const experiences = [
 <style scoped>
 .experience {
   padding: 2rem;
-  background: #f5f5f5;
+  background: #f0f0f0;
   color: #333;
 }
 
