@@ -28,7 +28,6 @@
   background-color: #02295f;
   line-height: 1.4;
   color: white;
-  height: 100vh;
 }
 
 .about h2 {

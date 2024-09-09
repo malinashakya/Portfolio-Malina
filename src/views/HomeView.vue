@@ -35,20 +35,23 @@
 <style scoped>
 .home {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 2rem;
   color: #ffffff;
   background-color: #022954;
+  height: auto;
+  flex-direction:column;
   text-align: center;
-}
+ }
 
 .social-links {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 1rem;
-  margin-bottom: 2rem;
+  position: fixed;
+  left: 2rem;
+  top: 40%;
 }
 
 .social-links a {
@@ -63,8 +66,7 @@
 
 .intro {
   max-width: 90%;
-  margin: 0 auto;
-  padding: 1rem;
+  margin:0 auto;
 }
 
 .intro h4 {
@@ -86,59 +88,35 @@
   color: #dcdde1;
 }
 
-.avatar {
+avatar {
   max-width: 80%;
   margin-top: 2rem;
 }
 
 .avatar img {
-  width: 100%;
+  max-width: 80%;
   border-radius: 10px;
 }
 
-@media (min-width: 576px) {
-  .social-links {
-    flex-direction: column;
-    position: fixed;
-    left: 1rem;
-    top: 40%;
-  }
-}
-
-@media (min-width: 768px) {
-  .home {
+@media(min-width: 768px)
+{
+  .home{
     flex-direction: row;
-    text-align: left;
+    text-align:left;
     height: 100vh;
   }
-
-  .intro {
-    max-width: 50%;
-    margin-left: 60px;
-    padding: 0;
+  .intro{
+    max-width:50%;
+    margin-left:60px;
   }
-
-  .intro h1 {
-    font-size: 3rem;
-  }
-
-  .intro p {
-    font-size: 1.1rem;
-  }
-
-  .avatar {
-    max-width: 30%;
-    margin: 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .intro h1 {
+  .intro h1{
     font-size: 4rem;
   }
-
-  .intro p {
-    font-size: 1.2rem;
+  .intro p{
+    font-size: 1.1rem;
+  }
+  .avatar{
+    max-width:30%;
   }
 }
 </style>
