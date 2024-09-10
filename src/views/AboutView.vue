@@ -22,41 +22,97 @@
     <SkillIcon />
   </section>
 </template>
+
 <style scoped>
+/* Base styles for standard screens, e.g., 1336x768 */
 .about {
-  padding: 1rem 6rem;
-  background-color: #02295f;
-  line-height: 1.4;
+  padding: 2rem 6rem;
+  background-color: #123c69;
+  line-height: 1.5;
   color: white;
+
 }
 
 .about h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .about p {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
+/* Adjust for smaller screens */
+@media (max-width: 1024px) {
   .about {
-    padding: 2rem 6rem;
-    background: #123c69;
-    line-height: 1.5;
-    color: white;
+    padding: 2rem 4rem;
+    overflow-y: auto;
   }
 
   .about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
   }
 
   .about p {
     font-size: 1.1rem;
   }
 }
+
+/* Adjust for tablets and smaller screens */
+@media (max-width: 768px) {
+  .about {
+    padding: 1.5rem;
+  }
+
+  .about h2 {
+    font-size: 1.75rem;
+  }
+
+  .about p {
+    font-size: 1.05rem;
+  }
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 576px) {
+  .about {
+    padding: 1rem;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
+
+/* Adjust for very large screens, e.g., 2560px and above */
+@media (min-width: 2560px) {
+  .about {
+    padding: 2rem 8rem;
+    height:100vh;
+  }
+
+  .about h2 {
+    font-size: 5rem;
+  }
+
+  .about p {
+    font-size: 2.5rem;
+  }
+}
+
+/* Target screens around 1440px wide with a height close to 734px */
+@media (min-width: 1440px) and (max-height: 734px) {
+  .about {
+    height: 100vh;
+  }
+}
 </style>
+
 <script setup lang="ts">
 import SkillIcon from '@/components/SkillIcon.vue'
 </script>

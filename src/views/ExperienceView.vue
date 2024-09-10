@@ -134,4 +134,57 @@ const experiences = [
 .experience-details li {
   margin: 0.5rem 0;
 }
+/* Responsive styles for specific screen sizes */
+@media (min-width: 2560px) and (max-width: 3840px) { /* 4k-2560 screens */
+  .experience {
+    height: 100vh;
+    padding: 2rem 8rem;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 2560px) { /* Laptops (1440px) */
+  .experience {
+    height: 100vh;
+    padding: 2rem 6rem;
+  }
+}
+
+@media (max-width: 768px) { /* Tablets (768px) */
+  .experience {
+    padding: 1.5rem;
+  }
+
+  .experience h2 {
+    font-size: 2rem;
+  }
+
+  .experience-container {
+    flex-direction: column;
+  }
+
+  .experience-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .company-logo {
+    width: 60px;
+  }
+
+  .experience-details h3 {
+    font-size: 1.125rem;
+  }
+
+  .experience-details h4 {
+    font-size: 1.1rem;
+  }
+
+  .experience-details p {
+    font-size: 1rem;
+  }
+
+  .experience-details li {
+    font-size: 0.9rem;
+  }
+}
 </style>
