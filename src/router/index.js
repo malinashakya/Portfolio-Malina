@@ -1,30 +1,23 @@
-import {createRouter, createWebHistory} from 'vue-router'
-import HomeView from '@/views/HomeView.vue'
-import AboutView from '@/views/AboutView.vue'
-import ContactView from '@/views/ContactView.vue'
-import ProjectView from '@/views/ProjectView.vue'
-import ExperienceView from '@/views/ExperienceView.vue'
+import { createRouter, createWebHistory } from 'vue-router';
 
-const routes=[
-  {
-    path:'/', component:HomeView
-  },
-  {
-    path:'/about',component: AboutView
-  },
-{
-  path:'/contact', component: ContactView
-},
-  {
-    path:'/projects', component: ProjectView
-  },
-  {
-    path:'/experience', component:ExperienceView
-  }
+// Dynamic import of views
+const HomeView = () => import('@/views/HomeView.vue');
+const AboutView = () => import('@/views/AboutView.vue');
+const ProjectView = () => import('@/views/ProjectView.vue');
+const ExperienceView = () => import('@/views/ExperienceView.vue');
+const ContactView = () => import('@/views/ContactView.vue');
+
+const routes = [
+  { path: '/', component: HomeView },
+  { path: '/about', component: AboutView },
+  { path: '/projects', component: ProjectView },
+  { path: '/experience', component: ExperienceView },
+  { path: '/contact', component: ContactView }
 ];
-const router=createRouter({
-  history:createWebHistory(),
-    routes,
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
 });
 
 export default router;

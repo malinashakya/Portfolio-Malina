@@ -119,7 +119,7 @@ const projects = ref([
 
 .view-project-link{
   color:#1abc9c;
-  text-decoration: underline;
+  text-decoration: none !important;
   font-weight:bold;
 }
 
