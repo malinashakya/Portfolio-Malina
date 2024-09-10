@@ -44,6 +44,7 @@
   .about {
     padding: 2rem 4rem;
     overflow-y: auto;
+    height:100vh;
 
   }
 
@@ -60,6 +61,7 @@
 @media (max-width: 768px) {
   .about {
     padding: 1.5rem;
+    height:100vh;
 
   }
 
@@ -115,13 +117,14 @@
 @media (min-width: 1080px) {
   .about{
     height:100vh;
+
   }
   .about h2 {
     font-size: 2.5rem;
   }
 
   .about p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
