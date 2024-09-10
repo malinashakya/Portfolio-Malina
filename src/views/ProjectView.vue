@@ -52,6 +52,7 @@ export default {
 
     const navigateToProject = (id) => {
       router.push({ path: `/project/${id}` });
+      // redirects you to the detailed view of that project by updating the URL and loading the corresponding component.
     };
 
     const projects = ref([

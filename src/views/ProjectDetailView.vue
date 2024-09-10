@@ -26,6 +26,7 @@ export default {
   setup() {
     const route = useRoute()
     const projectId = parseInt(route.params.id, 10)
+    // string to decimal i.e. base 10
 
     const projects = [
       {
@@ -52,8 +53,7 @@ export default {
       {
         id: 3,
         title: 'Library Management System',
-        description:
-                  `The Library Management System is an easy-to-use tool for librarians to manage book transactions. This console-based system keeps track of books that are borrowed and returned, ensuring everything is organized. Librarians can also add new books to the system effortlessly.
+        description: `The Library Management System is an easy-to-use tool for librarians to manage book transactions. This console-based system keeps track of books that are borrowed and returned, ensuring everything is organized. Librarians can also add new books to the system effortlessly.
                   Designed specifically for admins, this system streamlines library operations by automating these tasks. It helps maintain accurate records and makes managing the library's collection much simpler. With this system, librarians can ensure that the library runs smoothly and efficiently.`,
         link: 'https://github.com/malinashakya/Library-Management-System',
         image: LibraryImg
@@ -61,33 +61,32 @@ export default {
       {
         id: 4,
         title: 'Black Jack Multiplayer Game',
-        description:
-                  `The Black Jack Multiplayer Game is a fun, console-based game where players compete against each other, each starting with 100 points. The goal is to get a card total of less than 21 to win. It’s a game of chance, offering excitement and strategic play as players try to beat their opponents and keep their points high.`  ,
+        description: `The Black Jack Multiplayer Game is a fun, console-based game where players compete against each other, each starting with 100 points. The goal is to get a card total of less than 21 to win. It’s a game of chance, offering excitement and strategic play as players try to beat their opponents and keep their points high.`,
         link: 'https://github.com/malinashakya/BlackJackResumeMultiplayerGame',
         image: BlackJackImg
       },
       {
         id: 5,
         title: 'E-commerce',
-        description:
-                `The e-commerce platform is a user-friendly online clothing store designed for men, women, and children. It boasts a wide variety of fashion items, from trendy outfits to everyday essentials. Customers can easily browse through categories, filter by size or style, and find the perfect clothes for every member of the family. With its easy-to-navigate interface and secure shopping features, this platform makes finding and purchasing the latest fashion both simple and enjoyable. Whether you're shopping for yourself or loved ones, this store offers everything you need to stay stylish and comfortable.`,
+        description: `The e-commerce platform is a user-friendly online clothing store designed for men, women, and children. It boasts a wide variety of fashion items, from trendy outfits to everyday essentials. Customers can easily browse through categories, filter by size or style, and find the perfect clothes for every member of the family. With its easy-to-navigate interface and secure shopping features, this platform makes finding and purchasing the latest fashion both simple and enjoyable. Whether you're shopping for yourself or loved ones, this store offers everything you need to stay stylish and comfortable.`,
         link: 'https://malinashakya.github.io/',
         image: EcommerceImg
       },
       {
         id: 6,
         title: 'Weather App',
-        description:
-                `The Weather App is a comprehensive website that provides users with up-to-date weather information for various locations. With this app, users can easily check current weather conditions, including temperature, humidity, and wind speed, for any city or region. It also offers detailed forecasts for the coming days, allowing users to plan their activities with confidence. Whether you're planning a trip, deciding what to wear, or simply curious about the weather, the Weather App delivers accurate and timely updates to help you stay informed and make better decisions based on the latest weather data. Its intuitive design ensures that weather information is accessible and easy to understand for everyone.` ,
+        description: `The Weather App is a comprehensive website that provides users with up-to-date weather information for various locations. With this app, users can easily check current weather conditions, including temperature, humidity, and wind speed, for any city or region. It also offers detailed forecasts for the coming days, allowing users to plan their activities with confidence. Whether you're planning a trip, deciding what to wear, or simply curious about the weather, the Weather App delivers accurate and timely updates to help you stay informed and make better decisions based on the latest weather data. Its intuitive design ensures that weather information is accessible and easy to understand for everyone.`,
         link: 'https://malinashakya.github.io/weather-app/',
         image: WeatherImg
       }
     ]
 
     const project = ref(null)
-
+    //reactive reference that starts with a value of null
     onMounted(() => {
+      //onMounted=first mounted (i.e., added to the DOM).
       project.value = projects.find((p) => p.id === projectId)
+      //searches through the projects array to find the project with the ID that matches projectId
     })
 
     return {
