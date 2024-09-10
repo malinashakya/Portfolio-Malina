@@ -168,7 +168,7 @@ button:hover {
   }
 }
 @media (min-width: 1080px) {
-  .about{
+  .contact{
     height:100vh;
 
   }
