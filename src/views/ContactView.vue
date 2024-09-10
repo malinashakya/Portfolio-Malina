@@ -139,6 +139,34 @@ button {
 button:hover {
   background-color: #16a085;
 }
+
+@media (min-width: 2560px) {
+  .contact h2 {
+    font-size: 4.5rem;
+  }
+
+  .contact h3 {
+    font-size: 3rem;
+  }
+
+  .form-group label {
+    font-size: 2rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 2rem;
+    line-height: 2;
+  }
+
+  .contact-form {
+    max-width: 800px;
+  }
+
+  button {
+    font-size: 30px;
+  }
+}
 </style>
 <script setup lang="ts">
 import { reactive, toRaw } from 'vue'

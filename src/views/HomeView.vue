@@ -119,6 +119,24 @@ avatar {
     max-width:30%;
   }
 }
+@media (min-width: 2560px){
+    .intro h1{
+    font-size: 6rem;
+  }
+  .avatar{
+    width:1000px;
+  }
+  .intro h2 {
+    font-size: 5rem;
+  }
+
+  .intro p {
+    font-size: 2.5rem;
+  }
+  .intro h4{
+    font-size: 3rem;
+  }
+}
 </style>
 <script setup lang="ts">
 import AboutView from '@/views/AboutView.vue'

@@ -77,7 +77,7 @@ const experiences = [
 <style scoped>
 .experience {
   padding: 2rem;
-  background: #f0f0f0;
+  background: #77CEFA81;
   color: #333;
 }
 
@@ -140,12 +140,57 @@ const experiences = [
     height: 100vh;
     padding: 2rem 8rem;
   }
+  .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .experience-details h3 {
+     font-size: 2.5rem;
+  }
+
+  .experience-details h4 {
+    font-size: 2.2rem;
+  }
+
+  .experience-details p {
+    font-size: 2rem;
+  }
+
+  .experience-details ul {
+    font-size: 1.9rem;
+  }
+  .company-logo {
+    width: auto;
+    height: auto;
+
+  }
 }
 
 @media (min-width: 1440px) and (max-width: 2560px) { /* Laptops (1440px) */
   .experience {
     height: 100vh;
     padding: 2rem 6rem;
+  }
+  .experience-details h3 {
+    font-size: 2rem;
+  }
+
+  .experience-details h4 {
+    font-size: 1.5rem;
+  }
+
+  .experience-details p {
+    font-size: 1.2rem;
+  }
+
+  .experience-details ul {
+    font-size: 1.1em;
+  }
+  .company-logo {
+    width: 100px;
+    height: auto;
+
   }
 }
 
@@ -185,6 +230,31 @@ const experiences = [
 
   .experience-details li {
     font-size: 0.9rem;
+  }
+}
+@media (min-width: 2560px) {
+  .experience h2 {
+    font-size: 4.5rem;
+  }
+
+  .company-logo {
+    width: 400px;
+  }
+
+  .experience-details h3 {
+    font-size: 3rem;
+  }
+
+  .experience-details h4 {
+    font-size: 2.5rem;
+  }
+
+  .experience-details p {
+    font-size: 2.2rem;
+  }
+
+  .experience-details li {
+    font-size: 2rem;
   }
 }
 </style>

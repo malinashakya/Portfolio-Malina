@@ -26,18 +26,16 @@
 <style scoped>
 /* Base styles for standard screens, e.g., 1336x768 */
 .about {
+
   padding: 2rem 6rem;
   background-color: #123c69;
   line-height: 1.5;
   color: white;
-
 }
-
 .about h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
-
 .about p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
@@ -48,6 +46,7 @@
   .about {
     padding: 2rem 4rem;
     overflow-y: auto;
+
   }
 
   .about h2 {
@@ -63,6 +62,7 @@
 @media (max-width: 768px) {
   .about {
     padding: 1.5rem;
+
   }
 
   .about h2 {
@@ -78,6 +78,7 @@
 @media (max-width: 576px) {
   .about {
     padding: 1rem;
+
   }
 
   .about h2 {
@@ -94,6 +95,7 @@
   .about {
     padding: 2rem 8rem;
     height:100vh;
+
   }
 
   .about h2 {

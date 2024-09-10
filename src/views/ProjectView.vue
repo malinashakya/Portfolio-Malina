@@ -131,4 +131,84 @@ const projects = ref([
   height:200px;
   object-fit: cover;
 }
+
+/* Responsive Styles */
+
+/* For 4K and large screens */
+@media (min-width: 2560px) {
+  .projects h2 {
+    font-size: 3rem;
+  }
+
+  .project-card {
+    flex: 1 1 calc(25% - 2rem);
+  }
+
+  .project-card img {
+    height: 250px;
+  }
+}
+
+/* For desktop and large laptops */
+@media (min-width: 1440px) {
+  .project-card {
+    flex: 1 1 calc(33.333% - 2rem);
+  }
+
+  .project-card img {
+    height: 220px;
+  }
+}
+
+/* For tablets and small laptops */
+@media (min-width: 768px) {
+  .project-card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+
+  .project-card img {
+    height: 200px;
+  }
+}
+
+/* For mobile and smaller screens */
+@media (max-width: 768px) {
+  .projects {
+    padding: 1rem;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    flex: 1 1 100%;
+    max-width: 500px;
+  }
+
+  .project-card img {
+    height: 200px;
+  }
+}
+@media (min-width: 2560px) {
+  .projects h2 {
+    font-size: 5rem;
+  }
+
+  .project-card {
+    flex: 1 1 calc(33.3333% - 2rem);
+  }
+
+  .project-card img {
+    height: 250px;
+  }
+
+  .project-card h3 {
+    font-size: 2.5rem;
+  }
+
+  .project-card p {
+    font-size: 2rem;
+  }
+}
 </style>
