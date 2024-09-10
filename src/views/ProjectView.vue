@@ -87,7 +87,7 @@ const projects = ref([
 <style scoped>
 .projects{
   padding: 2rem;
-  background: lightskyblue;
+  background: #4276ae;
   color:white;
 
 }
@@ -111,6 +111,7 @@ const projects = ref([
   box-shadow: 0 4px 8px rgb(0,0,0,0.2);
   color: #ecf0f1;
   transition: transform 0.3s;
+
  }
 
 .project-card:hover{
@@ -136,6 +137,7 @@ const projects = ref([
 
 /* For 4K and large screens */
 @media (min-width: 2560px) {
+
   .projects h2 {
     font-size: 3rem;
   }
@@ -151,6 +153,7 @@ const projects = ref([
 
 /* For desktop and large laptops */
 @media (min-width: 1440px) {
+
   .project-card {
     flex: 1 1 calc(33.333% - 2rem);
   }
@@ -162,8 +165,9 @@ const projects = ref([
 
 /* For tablets and small laptops */
 @media (min-width: 768px) {
+
   .project-card {
-    flex: 1 1 calc(50% - 2rem);
+    flex: 1 1 calc(33.3333% - 2rem);
   }
 
   .project-card img {

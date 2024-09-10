@@ -40,7 +40,7 @@ const items = ref([
 
 <style scoped>
 .p-menubar {
-  background-color: #2c3e50;
+  background-color: #23405e;
   padding: 1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -55,5 +55,11 @@ const items = ref([
   border: none;
   cursor: pointer;
   text-decoration: none;
+}
+
+.menu-item:active,
+.menu-item:hover {
+  color: #0db1da !important; /* Ensure the color stays as intended */
+  outline: none; /* Remove any focus outline if necessary */
 }
 </style>

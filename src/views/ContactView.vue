@@ -53,7 +53,7 @@
 <style scoped>
 .contact {
   padding: 2rem;
-  background: #405690;
+  background: #4861a1;
   color: white;
   text-align: center;
 }
