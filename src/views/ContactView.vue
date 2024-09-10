@@ -170,7 +170,6 @@ button:hover {
 @media (min-width: 1920px) and (max-width: 2560px) {
   .contact{
     height:100vh;
-
   }
 }
 </style>

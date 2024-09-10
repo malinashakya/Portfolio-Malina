@@ -117,7 +117,13 @@
 @media (min-width: 1080px) {
   .about{
     height:100vh;
+  }
+  .about h2 {
+    font-size: 5rem;
+  }
 
+  .about p {
+    font-size: 3.5rem;
   }
 }
 
