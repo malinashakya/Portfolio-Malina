@@ -119,11 +119,11 @@
     height:100vh;
   }
   .about h2 {
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
 
   .about p {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
   }
 }
 
