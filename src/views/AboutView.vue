@@ -114,23 +114,13 @@
   }
 }
 
-/* Adjust for 1920x1080 screens */
-@media (min-width: 1920px) and (max-width: 1920px) and (min-height: 1080px) and (max-height: 1080px) {
-  .about {
-    padding: 3rem 8rem;
-    height: 100vh;
-  }
+@media (min-width: 1080px) {
+  .about{
+    height:100vh;
 
-  .about h2 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .about p {
-    font-size: 1.5rem;
-    margin-bottom: 1.2rem;
   }
 }
+
 </style>
 
 <script setup lang="ts">

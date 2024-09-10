@@ -167,10 +167,10 @@ button:hover {
     font-size: 30px;
   }
 }
+@media (min-width: 1080px) {
+  .about{
+    height:100vh;
 
-@media (min-width: 1920px) and (max-width: 1920px) and (min-height: 1080px) and (max-height: 1080px) {
-  .contact {
-    height: 100vh;
   }
 }
 </style>
