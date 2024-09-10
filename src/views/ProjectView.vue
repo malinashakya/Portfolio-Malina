@@ -7,18 +7,19 @@
         :key="index"
         style="width: 25rem; overflow: hidden"
         class="project-card"
+        @click="navigateToProject(project.id)"
       >
         <template #header>
           <img :src="project.image" :alt="project.title" />
         </template>
         <template #title>
-          <h3  style="text-align: center">{{ project.title}}</h3>
+          <h3 style="text-align: center">{{ project.title }}</h3>
         </template>
         <template #content>
-          <p class="m-0"  style="text-align: center"> {{ project.description}}</p>
+          <p class="m-0" style="text-align: center">{{ project.description }}</p>
         </template>
         <template #footer>
-          <a :href="project.link" target="_blank" class="view-project-link" >
+          <a :href="project.link" target="_blank" class="view-project-link">
             <p style="text-align: center">View Project</p>
           </a>
         </template>
@@ -27,62 +28,79 @@
     <SkillIcon />
   </section>
 </template>
-<script setup lang="ts">
-import SkillIcon from '@/components/SkillIcon.vue'
-import { ref } from 'vue'
-import Card from 'primevue/card'
 
-import LMSImg from '../assets/LMS.webp'
-import BMSImg from '../assets/BMS.webp'
-import LibraryImg from '../assets/Library.webp'
-import BlackJackImg from '../assets/blackjack.webp'
-import EcommerceImg from '../assets/ecommerce.webp'
-import WeatherImg from '../assets/weather.webp'
+<script>
+import SkillIcon from '@/components/SkillIcon.vue';
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+import Card from 'primevue/card';
 
-const projects = ref([
-  {
-    title: 'Leave Management System',
-    description:
-      'The Leave Management System (backend) efficiently handles and tracks employee leave requests. Employees can apply for up to 15 days of sick leave, with requests required to be submitted at least one day in advance. This system streamlines the leave process management.',
-    link: 'https://github.com/malinashakya/LMS-frontend',
-    image: LMSImg
+import LMSImg from '../assets/LMS.webp';
+import BMSImg from '../assets/BMS.webp';
+import LibraryImg from '../assets/Library.webp';
+import BlackJackImg from '../assets/blackjack.webp';
+import EcommerceImg from '../assets/ecommerce.webp';
+import WeatherImg from '../assets/weather.webp';
+
+export default {
+  components: {
+    SkillIcon,
+    Card
   },
-  {
-    title: 'Bank Management System',
-    description:
-      'The Bank Management System facilitates transactions for both admins and customers. Admins can handle deposits, withdrawals, and transfers, while customers can transfer funds between savings accounts. It supports fixed and savings account types.',
-    link: 'https://github.com/malinashakya/Banking-Management-System',
-    image: BMSImg
-  },
-  {
-    title: 'Library Management System',
-    description:
-      'The Library Management System is a console-based tool that allows librarians to manage book transactions. It records borrowed and returned books and supports adding new books to the system. It is admin-based system.',
-    link: 'https://github.com/malinashakya/Library-Management-System',
-    image: LibraryImg
-  },
-  {
-    title: 'Black Jack Multiplayer Game',
-    description:
-      'The Black Jack Multiplayer Game is a console-based game where multiple players compete with each starting with 100 points. It’s a game of chance where players aim to get a card sum of less than 21 to win.',
-    link: 'https://github.com/malinashakya/BlackJackResumeMultiplayerGame',
-    image: BlackJackImg
-  },
-  {
-    title: 'E-commerce',
-    description:
-      'The e-commerce platform is a web-based clothing store catering to men, women, and children. It offers a wide range of apparel, making it easy for customers to shop for fashion items across all age groups.',
-    link: 'https://malinashakya.github.io/',
-    image: EcommerceImg
-  },
-  {
-    title: 'Weather App',
-    description:
-      'The Weather App is a web-based system that allows users to check weather conditions for various locations. It provides current weather updates and forecasts, helping users plan their activities based on real-time.',
-    link: 'https://malinashakya.github.io/weather-app/',
-    image: WeatherImg
+  setup() {
+    const router = useRouter();
+
+    const navigateToProject = (id) => {
+      router.push({ path: `/project/${id}` });
+    };
+
+    const projects = ref([
+      {
+        id: 1,
+        title: 'Leave Management System',
+        description: 'The Leave Management System (backend) efficiently handles and tracks employee leave requests. Employees can apply for up to 15 days of sick leave, with requests required to be submitted at least one day in advance. This system streamlines the leave process management.',
+        link: 'https://github.com/malinashakya/LMS-frontend',
+        image: LMSImg
+      },
+      {
+        id: 2,
+        title: 'Bank Management System',
+        description: 'The Bank Management System facilitates transactions for both admins and customers. Admins can handle deposits, withdrawals, and transfers, while customers can transfer funds between savings accounts. It supports fixed and savings account types.',
+        link: 'https://github.com/malinashakya/Banking-Management-System',
+        image: BMSImg
+      },
+      {
+        id: 3,
+        title: 'Library Management System',
+        description: 'The Library Management System is a console-based tool that allows librarians to manage book transactions. It records borrowed and returned books and supports adding new books to the system. It is admin-based system.',
+        link: 'https://github.com/malinashakya/Library-Management-System',
+        image: LibraryImg
+      },
+      {
+        id: 4,
+        title: 'Black Jack Multiplayer Game',
+        description: 'The Black Jack Multiplayer Game is a console-based game where multiple players compete with each starting with 100 points. It’s a game of chance where players aim to get a card sum of less than 21 to win.',
+        link: 'https://github.com/malinashakya/BlackJackResumeMultiplayerGame',
+        image: BlackJackImg
+      },
+      {
+        id: 5,
+        title: 'E-commerce',
+          description: 'The e-commerce platform is a web-based clothing store catering to men, women, and children. It offers a wide range of apparel, making it easy for customers to shop for fashion items across all age groups.',
+        link: 'https://malinashakya.github.io/',
+        image: EcommerceImg
+      },
+      {
+        id: 6,
+        title: 'Weather App',
+        description: 'The Weather App is a web-based system that allows users to check weather conditions for various locations. It provides current weather updates and forecasts, helping users plan their activities based on real-time.',
+        link: 'https://malinashakya.github.io/weather-app/',
+        image: WeatherImg
+      }
+    ]);
+    return { projects, navigateToProject };
   }
-])
+};
 </script>
 <style scoped>
 .projects{

@@ -18,8 +18,6 @@
       Passionate about learning and contributing to the Java ecosystem, Malina is enthusiastic about
       exploring new technologies and continuously enhancing their skill set.
     </p>
-    <!-- Include the SkillIcon component here -->
-    <SkillIcon />
   </section>
 </template>
 
@@ -130,5 +128,4 @@
 </style>
 
 <script setup lang="ts">
-import SkillIcon from '@/components/SkillIcon.vue'
 </script>
