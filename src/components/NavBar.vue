@@ -48,6 +48,7 @@ const items = ref([
 .menu-item {
   color: #ecf0f1;
   font-weight: bold;
+  font-size: 1.4rem;
   font-family: 'Roboto', sans-serif;
   margin-right: 1rem;
   padding: 0.5rem 1rem;
