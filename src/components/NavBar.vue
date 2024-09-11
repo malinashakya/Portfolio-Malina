@@ -60,7 +60,7 @@ const items = ref([
 
 .menu-item:active,
 .menu-item:hover {
-  color: #0db1da !important; /* Ensure the color stays as intended */
-  outline: none; /* Remove any focus outline if necessary */
+  color: #0db1da !important;
+  outline: none;
 }
 </style>

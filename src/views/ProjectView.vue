@@ -121,6 +121,7 @@ export default {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  cursor:pointer;
 }
 
 .project-card{

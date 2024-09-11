@@ -56,7 +56,7 @@
 
 .social-links a {
   color: #ecf0f1;
-  font-size: 1.5rem;
+  font-size: 3rem;
   transition: color 0.3s;
 }
 
