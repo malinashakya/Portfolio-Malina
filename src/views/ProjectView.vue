@@ -234,4 +234,17 @@ export default {
     font-size: 2rem;
   }
 }
+
+@media(min-width: 1440px) {
+  .project-card h2 {
+    font-size: 2.5rem;
+  }
+  .project-card h3 {
+    font-size: 2.1rem;
+  }
+
+  .project-card p {
+    font-size: 1.8rem;
+  }
+}
 </style>

@@ -259,6 +259,28 @@ const experiences = [
   .experience{
     height:auto;
   }
+}
 
+@media(min-width: 1440px) {
+  .experience-details h3 {
+    font-size: 2.1rem;
+  }
+
+  .experience-details h4 {
+    font-size: 2rem;
+  }
+
+  .experience-details p {
+    font-size: 1.8rem;
+  }
+
+  .experience-details li {
+    font-size: 1.7rem;
+  }
+  .company-logo {
+    width: 150px;
+    height: auto;
+
+  }
 }
 </style>
