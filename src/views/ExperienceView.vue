@@ -2,25 +2,17 @@
   <section class="experience">
     <h2>Work Experience</h2>
     <div class="experience-container">
-      <div v-for="item in experiences" :key="item" class="experience-card">
+      <Card v-for="item in experiences" :key="item.organisation" class="experience-card">
         <img :src="item.imageSrc" alt="Company Logo" class="company-logo"/>
         <div class="experience-details">
-          <h3>
-            {{ item.role}}
-          </h3>
-          <h4>
-            {{ item.organisation}}
-          </h4>
-          <p>
-            {{ item.startDate}} - {{ item.endDate}}
-          </p>
+          <h3>{{ item.role }}</h3>
+          <h4>{{ item.organisation }}</h4>
+          <p>{{ item.startDate }} - {{ item.endDate }}</p>
           <ul>
-            <li v-for="exp in item.experiences" :key="exp">
-              {{ exp}}
-            </li>
+            <li v-for="exp in item.experiences" :key="exp">{{ exp }}</li>
           </ul>
         </div>
-      </div>
+      </Card>
     </div>
   </section>
 </template>
@@ -255,6 +247,11 @@ const experiences = [
 
   .experience-details li {
     font-size: 2rem;
+  }
+}
+@media (min-width: 1024px){
+  .experience {
+    height: 100vh;
   }
 }
 </style>
