@@ -61,7 +61,7 @@
 @media (max-width: 768px) {
   .about {
     padding: 1.5rem;
-    height:100vh;
+    height:auto;
 
   }
 
@@ -103,7 +103,7 @@
   }
 
   .about p {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 }
 

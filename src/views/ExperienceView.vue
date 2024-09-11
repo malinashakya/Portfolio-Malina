@@ -254,4 +254,11 @@ const experiences = [
     height: 100vh;
   }
 }
+
+@media (min-width: 1080px) {
+  .experience{
+    height:100vh;
+  }
+
+}
 </style>
