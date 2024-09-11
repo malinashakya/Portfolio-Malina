@@ -127,7 +127,15 @@
     font-size: 1.2rem;
   }
 }
-
+@media(min-width: 1440px)
+{
+  .about h2{
+    font-size:3rem;
+  }
+  .about p{
+    font-size:2rem;
+  }
+}
 </style>
 
 <script setup lang="ts">
