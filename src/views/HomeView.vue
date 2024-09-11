@@ -1,17 +1,22 @@
 <template>
   <section class="home">
+    <!-- Social media links section -->
     <aside class="social-links">
-      <a href="mailto:malinashakya59@gmail.com" aria-label="Email">
+      <!-- Email link with FontAwesome icon -->
+      <a aria-label="Email" href="mailto:malinashakya59@gmail.com">
         <font-awesome-icon icon="envelope" />
       </a>
-      <a href="https://www.linkedin.com/in/malina-shakya-9a0ba823b" aria-label="Linkedin">
+      <!-- LinkedIn link with FontAwesome icon -->
+      <a aria-label="Linkedin" href="https://www.linkedin.com/in/malina-shakya-9a0ba823b">
         <font-awesome-icon :icon="['fab', 'linkedin']" />
       </a>
-      <a href="https://github.com/malinashakya" aria-label="Github">
+      <!-- GitHub link with FontAwesome icon -->
+      <a aria-label="Github" href="https://github.com/malinashakya">
         <font-awesome-icon :icon="['fab', 'github']" />
       </a>
     </aside>
 
+    <!-- Introduction section -->
     <div class="intro">
       <h4>Who is she?</h4>
       <h1>Malina Shakya</h1>
@@ -23,16 +28,21 @@
       </p>
     </div>
 
+    <!-- Avatar section -->
     <figure class="avatar">
       <img src="../assets/my-avatar.jpeg" />
     </figure>
   </section>
+
+  <!-- Importing additional view components -->
   <AboutView />
   <ProjectView />
   <ExperienceView />
   <ContactView />
 </template>
+
 <style scoped>
+/* Base styling for the home section */
 .home {
   display: flex;
   align-items: center;
@@ -41,10 +51,11 @@
   color: #ffffff;
   background-color: #022954;
   height: auto;
-  flex-direction:column;
+  flex-direction: column;
   text-align: center;
- }
+}
 
+/* Styling for social media links */
 .social-links {
   display: flex;
   flex-direction: column;
@@ -54,19 +65,22 @@
   top: 40%;
 }
 
+/* Social media link styles */
 .social-links a {
   color: #ecf0f1;
   font-size: 3rem;
   transition: color 0.3s;
 }
 
+/* Hover effect for social media links */
 .social-links a:hover {
   color: #1abc9c;
 }
 
+/* Styling for the introduction section */
 .intro {
   max-width: 90%;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .intro h4 {
@@ -88,7 +102,8 @@
   color: #dcdde1;
 }
 
-avatar {
+/* Styling for the avatar section */
+.avatar {
   max-width: 80%;
   margin-top: 2rem;
 }
@@ -98,34 +113,55 @@ avatar {
   border-radius: 10px;
 }
 
-@media(min-width: 768px)
-{
-  .home{
+/* Media queries for responsive design */
+
+/* Screen width 768px and above (tablet and small desktop) */
+@media (min-width: 768px) {
+  .home {
     flex-direction: row;
-    text-align:left;
+    text-align: left;
     height: 100vh;
   }
-  .intro{
-    max-width:50%;
-    margin-left:60px;
+
+  .intro {
+    max-width: 50%;
+    margin-left: 60px;
   }
-  .intro h1{
+
+  .intro h1 {
     font-size: 4rem;
   }
-  .intro p{
+
+  .intro p {
     font-size: 1.1rem;
   }
-  .avatar{
-    max-width:30%;
+
+  .avatar {
+    max-width: 30%;
   }
 }
-@media (min-width: 2560px){
-    .intro h1{
+
+/* Screen width 1440px and above (large desktop) */
+@media (min-width: 1440px) {
+  .intro p {
+    font-size: 2rem;
+  }
+
+  .intro h4 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Screen width 2560px and above (ultra-large screens) */
+@media (min-width: 2560px) {
+  .intro h1 {
     font-size: 6rem;
   }
-  .avatar{
-    width:1000px;
+
+  .avatar {
+    width: 1000px;
   }
+
   .intro h2 {
     font-size: 5rem;
   }
@@ -133,21 +169,14 @@ avatar {
   .intro p {
     font-size: 2.5rem;
   }
-  .intro h4{
+
+  .intro h4 {
     font-size: 3rem;
   }
 }
-@media(min-width: 1440px)
-{
-  .intro p{
-    font-size:2rem;
-  }
-  .intro h4{
-    font-size: 2.5rem;
-  }
-}
 </style>
-<script setup lang="ts">
+
+<script lang="ts" setup>
 import AboutView from '@/views/AboutView.vue'
 import ProjectView from '@/views/ProjectView.vue'
 import ExperienceView from '@/views/ExperienceView.vue'

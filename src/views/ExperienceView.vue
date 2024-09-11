@@ -1,13 +1,18 @@
 <template>
   <section class="experience">
+    <!-- Section heading for work experience -->
     <h2>Work Experience</h2>
     <div class="experience-container">
+      <!-- Loop through experiences and render each one as a Card component -->
       <Card v-for="item in experiences" :key="item.organisation" class="experience-card">
-        <img :src="item.imageSrc" alt="Company Logo" class="company-logo"/>
+        <!-- Company logo -->
+        <img :src="item.imageSrc" alt="Company Logo" class="company-logo" />
         <div class="experience-details">
+          <!-- Role and organization details -->
           <h3>{{ item.role }}</h3>
           <h4>{{ item.organisation }}</h4>
           <p>{{ item.startDate }} - {{ item.endDate }}</p>
+          <!-- List of experiences -->
           <ul>
             <li v-for="exp in item.experiences" :key="exp">{{ exp }}</li>
           </ul>
@@ -16,12 +21,14 @@
     </div>
   </section>
 </template>
-<script setup lang="js">
+
+<script lang="js" setup>
 import synergyImg from '@/assets/synergy.png'
 import webpalImg from '@/assets/webpal.jpeg'
 import dansonImg from '@/assets/danson.jpeg'
 import infinityImg from '@/assets/infinity.png'
 
+// Array of experience objects
 const experiences = [
   {
     role: 'Java Intern',
@@ -66,221 +73,227 @@ const experiences = [
   }
 ]
 </script>
+
 <style scoped>
 .experience {
   padding: 2rem;
-  background: #5192c3;
-  color: #333;
+  background: #5192c3; /* Background color for the experience section */
+  color: #333; /* Text color */
 }
 
 .experience h2 {
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* Font size for the section heading */
   margin-bottom: 1rem;
 }
 
 .experience-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: flex; /* Flexbox layout for the container */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 2rem; /* Space between items */
 }
 
 .experience-card {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  flex: 1 1 calc(50% - 2rem);
-  display: flex;
-  align-items: center;
+  background: #fff; /* Background color for each card */
+  border-radius: 8px; /* Rounded corners for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 1.5rem; /* Padding inside the card */
+  flex: 1 1 calc(50% - 2rem); /* Flex properties to adjust the card size */
+  display: flex; /* Flexbox layout inside the card */
+  align-items: center; /* Center items vertically */
 }
 
 .company-logo {
-  width: 100px;
-  height: auto;
-  margin-right: 1.5rem;
+  width: 100px; /* Width of the company logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 1.5rem; /* Space between the logo and details */
 }
 
 .experience-details {
-  flex: 1;
+  flex: 1; /* Flex property to allow details to take remaining space */
 }
 
 .experience-details h3 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Font size for the role */
 }
 
 .experience-details h4 {
-  margin: 0.5rem 0;
-  font-size: 1.2rem;
+  margin: 0.5rem 0; /* Margin for the organization */
+  font-size: 1.2rem; /* Font size for the organization */
 }
 
 .experience-details p {
-  margin: 0.5rem 0;
+  margin: 0.5rem 0; /* Margin for the date range */
 }
 
 .experience-details ul {
   padding: 0;
-  list-style: none;
+  list-style: none; /* Remove default list styling */
 }
 
 .experience-details li {
-  margin: 0.5rem 0;
+  margin: 0.5rem 0; /* Margin for each list item */
 }
+
 /* Responsive styles for specific screen sizes */
-@media (min-width: 2560px) and (max-width: 3840px) { /* 4k-2560 screens */
+@media (min-width: 2560px) and (max-width: 3840px) {
+  /* For large screens (4K+) */
   .experience {
-    height: 100vh;
-    padding: 2rem 8rem;
+    height: 100vh; /* Full viewport height */
+    padding: 2rem 8rem; /* Increased padding */
   }
-  .experience-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
+
   .experience-details h3 {
-     font-size: 2.5rem;
+    font-size: 2.5rem; /* Larger font size for role */
   }
 
   .experience-details h4 {
-    font-size: 2.2rem;
+    font-size: 2.2rem; /* Larger font size for organization */
   }
 
   .experience-details p {
-    font-size: 2rem;
+    font-size: 2rem; /* Larger font size for date range */
   }
 
   .experience-details ul {
-    font-size: 1.9rem;
+    font-size: 1.9rem; /* Larger font size for list items */
   }
-  .company-logo {
-    width: auto;
-    height: auto;
 
+  .company-logo {
+    width: auto; /* Adjust logo width */
+    height: auto; /* Adjust logo height */
   }
 }
 
-@media (min-width: 1440px) and (max-width: 2560px) { /* Laptops (1440px) */
+@media (min-width: 1440px) and (max-width: 2560px) {
+  /* For large desktops */
   .experience {
-    height: 100vh;
-    padding: 2rem 6rem;
+    height: 100vh; /* Full viewport height */
+    padding: 2rem 6rem; /* Padding adjustment */
   }
+
   .experience-details h3 {
-    font-size: 2rem;
+    font-size: 2rem; /* Font size for role */
   }
 
   .experience-details h4 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Font size for organization */
   }
 
   .experience-details p {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Font size for date range */
   }
 
   .experience-details ul {
-    font-size: 1.1em;
+    font-size: 1.1em; /* Font size for list items */
   }
-  .company-logo {
-    width: 100px;
-    height: auto;
 
+  .company-logo {
+    width: 100px; /* Logo width for large desktops */
   }
 }
 
-@media (max-width: 768px) { /* Tablets (768px) */
+@media (max-width: 768px) {
+  /* For tablets and mobile devices */
   .experience {
-    padding: 1.5rem;
+    padding: 1.5rem; /* Padding adjustment */
   }
 
   .experience h2 {
-    font-size: 2rem;
+    font-size: 2rem; /* Font size for section heading */
   }
 
   .experience-container {
-    flex-direction: column;
+    flex-direction: column; /* Stack cards vertically */
   }
 
   .experience-card {
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding: 1rem; /* Padding inside the card */
+    margin-bottom: 1rem; /* Space below each card */
   }
 
   .company-logo {
-    width: 60px;
+    width: 60px; /* Smaller logo width */
   }
 
   .experience-details h3 {
-    font-size: 1.125rem;
+    font-size: 1.125rem; /* Font size for role */
   }
 
   .experience-details h4 {
-    font-size: 1.1rem;
+    font-size: 1.1rem; /* Font size for organization */
   }
 
   .experience-details p {
-    font-size: 1rem;
+    font-size: 1rem; /* Font size for date range */
   }
 
   .experience-details li {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Font size for list items */
   }
 }
+
 @media (min-width: 2560px) {
+  /* Additional styles for very large screens */
   .experience h2 {
-    font-size: 4.5rem;
+    font-size: 4.5rem; /* Font size for section heading */
   }
 
   .company-logo {
-    width: 400px;
+    width: 400px; /* Large logo width */
   }
 
   .experience-details h3 {
-    font-size: 3rem;
+    font-size: 3rem; /* Larger font size for role */
   }
 
   .experience-details h4 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Larger font size for organization */
   }
 
   .experience-details p {
-    font-size: 2.2rem;
+    font-size: 2.2rem; /* Larger font size for date range */
   }
 
   .experience-details li {
-    font-size: 2rem;
+    font-size: 2rem; /* Larger font size for list items */
   }
 }
-@media (min-width: 1024px){
+
+@media (min-width: 1024px) {
+  /* For desktops and larger screens */
   .experience {
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
   }
 }
 
 @media (min-width: 1080px) {
-  .experience{
-    height:auto;
+  /* For desktops and larger screens */
+  .experience {
+    height: auto; /* Height adjustment */
   }
 }
 
-@media(min-width: 1440px) {
+@media (min-width: 1440px) {
+  /* For larger desktops */
   .experience-details h3 {
-    font-size: 2.1rem;
+    font-size: 2.1rem; /* Font size for role */
   }
 
   .experience-details h4 {
-    font-size: 2rem;
+    font-size: 2rem; /* Font size for organization */
   }
 
   .experience-details p {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Font size for date range */
   }
 
   .experience-details li {
-    font-size: 1.7rem;
+    font-size: 1.7rem; /* Font size for list items */
   }
-  .company-logo {
-    width: 150px;
-    height: auto;
 
+  .company-logo {
+    width: 150px; /* Logo width for larger desktops */
   }
 }
 </style>
