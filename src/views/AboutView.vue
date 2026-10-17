@@ -1,23 +1,45 @@
 <template>
   <section class="about">
     <h2>About Me</h2>
-    <p>
-      Malina is a skilled web developer with a robust foundation in HTML, CSS, and JavaScript.
-      Proficient in building dynamic and responsive websites, Malina also has experience with Java
-      and Spring, showcasing a keen interest in backend development. With a solid grasp of React for
-      frontend development, Malina is adept at creating seamless user experiences.
-    </p>
-    <p>
-      In addition to technical skills, Malina is experienced in content writing and has a strong
-      understanding of SQL for database management. Knowledgeable in SEO best practices, Malina
-      ensures that websites are optimized for search engines and user visibility. Familiar with
-      version control through GitHub, Malina is well-equipped to manage and collaborate on projects
-      effectively.
-    </p>
-    <p>
-      Passionate about learning and contributing to the Java ecosystem, Malina is enthusiastic about
-      exploring new technologies and continuously enhancing their skill set.
-    </p>
+<p>
+  Malina Shakya is an Information Management graduate from Shanker Dev Campus
+  with a strong interest in software development, particularly backend
+  development using Java. She has practical experience with technologies such
+  as Quarkus, the Spring Framework, Hibernate, and JavaServer Faces (JSF), as
+  well as frontend frameworks including Vue.js, Nuxt.js, and React.js. She
+  enjoys building reliable, efficient, and user-friendly applications that
+  address real-world business needs.
+</p>
+
+<p>
+  Malina has been actively working on an inventory management system with
+  integrated restaurant management features, using Quarkus for backend
+  development and Vue.js for the frontend. The system includes dynamic QR code
+  functionality, financial reports, stock reports, and other reporting
+  features to support business operations. Her responsibilities include
+  developing new features, enhancing existing functionality, writing and
+  maintaining test cases, optimizing code quality and performance, and
+  identifying and fixing bugs to improve application reliability and
+  maintainability.
+</p>
+
+<p>
+  Committed to continuous learning, Malina has strengthened her programming
+  knowledge through online courses and certifications in Java, data
+  structures, backend development, and web technologies. She has also explored
+  PHP, JavaScript, HTML, and CSS through platforms such as Coursera, SoloLearn,
+  and OpenWeaver. Her technical skills are complemented by knowledge of SQL
+  database management, Git, and GitHub for version control and collaboration.
+</p>
+
+<p>
+  Beyond development, Malina has knowledge of SEO and content writing, along
+  with experience in SQL, Git, and GitHub. Passionate about learning new
+  technologies and solving real-world problems, she strives to build efficient
+  software solutions and grow professionally as a developer.
+</p>
+
+
   </section>
 </template>
 

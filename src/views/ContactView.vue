@@ -8,7 +8,7 @@
     </div>
 
     <!-- Contact Form Section -->
-    <form class="contact-form" @submit.prevent="handleSubmit">
+    <!--  <form class="contact-form" @submit.prevent="handleSubmit">
       <div class="form-group">
         <label for="name">Name</label>
         <input id="name" v-model="formData.name" placeholder="Your Name" required type="text" />
@@ -28,7 +28,7 @@
         ></textarea>
       </div>
       <button type="submit">Send Message</button>
-    </form>
+    </form> -->
 
     <!-- Social Media Links -->
     <ul>

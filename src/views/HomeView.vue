@@ -20,12 +20,13 @@
     <div class="intro">
       <h4>Who is she?</h4>
       <h1>Malina Shakya</h1>
-      <p>
-        "A student with experience. Currently, a last year student of Bachelor of Information
-        Management of Tribhuvan University. And has experience in HTML, CSS, Javascript, Java, React
-        JS and Content writing. Perfect balance between technical & managerial skills stands her
-        apart from the crowd."
-      </p>
+  <p>
+  An Information Management graduate with hands-on experience in Java,
+  Quarkus, Vue.js, React.js, and web development. With a strong interest in
+  backend development and a blend of technical and managerial skills, she
+  enjoys building practical solutions and continuously expanding her expertise.
+</p>
+
     </div>
 
     <!-- Avatar section -->

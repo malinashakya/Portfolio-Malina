@@ -31,13 +31,26 @@ import infinityImg from '@/assets/infinity.png'
 // Array of experience objects
 const experiences = [
   {
-    role: 'Java Intern',
+    role: 'Java Developer',
     organisation: 'Synergy Tech Software',
-    startDate: 'July, 2023',
+    startDate: 'November, 2024',
     endDate: 'Current',
     experiences: [
-      'Developed and maintained Java applications for internal use.',
-      'Collaborated with senior developers to troubleshoot and optimize code.'
+      '- Developed feature amd update Java and Vue applications for Inventory Management System.',
+      '- Debug the code inorder to find root cause of the bugs and fix them.',
+      '- Written test cases for different modules of the project.',
+      '- Collaborated with senior developers to troubleshoot and optimize code.'
+    ],
+    imageSrc: synergyImg
+  },
+  {
+    role: 'Java Intern',
+    organisation: 'Synergy Tech Software',
+    startDate: 'July, 2024',
+    endDate: 'November, 2024',
+    experiences: [
+      '- Developed and maintained Java applications for internal use.',
+      '- Collaborated with senior developers to troubleshoot and optimize code.'
     ],
     imageSrc: synergyImg
   },
@@ -46,7 +59,7 @@ const experiences = [
     organisation: 'Webpal Business Ltd.',
     startDate: 'Oct, 2023',
     endDate: 'Jun, 2024',
-    experiences: ['Worked on React projects.', 'Helped create UI components and React framework.'],
+    experiences: ['- Worked on React projects.', '- Helped create UI components and React framework.'],
     imageSrc: webpalImg
   },
   {
@@ -55,8 +68,8 @@ const experiences = [
     startDate: 'June, 2023',
     endDate: 'August, 2023',
     experiences: [
-      'Researched various AI tools and platforms for creating interactive games.',
-      'Designed prompts for image, sound effects, and YouTube videos.'
+      '- Researched various AI tools and platforms for creating interactive games.',
+      '- Designed prompts for image, sound effects, and YouTube videos.'
     ],
     imageSrc: dansonImg
   },
@@ -66,8 +79,8 @@ const experiences = [
     startDate: 'Feb, 2023',
     endDate: 'Apr, 2023',
     experiences: [
-      'Explored e-commerce sites like Daraz, Gyapu, Bizbazar, etc.',
-      'Worked as an e-commerce account handler.'
+      '- Explored e-commerce sites like Daraz, Gyapu, Bizbazar, etc.',
+      '- Worked as an e-commerce account handler.'
     ],
     imageSrc: infinityImg
   }

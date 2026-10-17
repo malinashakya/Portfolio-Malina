@@ -70,7 +70,7 @@ export default {
         title: 'E-commerce',
         description: `The e-commerce platform is a user-friendly online clothing store designed for men, women, and children...
         Whether you're shopping for yourself or loved ones, this store offers everything you need to stay stylish and comfortable.`,
-        link: 'https://malinashakya.github.io/',
+        link: 'https://github.com/malinashakya/E-commerce',
         image: EcommerceImg
       },
       {
